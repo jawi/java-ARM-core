@@ -572,7 +572,7 @@ public class Arm
       return;
     }
 
-    if ((opcode >> 24) == 0xEF)
+    if ((opcode >>> 24) == 0xEF)
     {
       int ImmA = (opcode & 0xFFFFFF);
 
